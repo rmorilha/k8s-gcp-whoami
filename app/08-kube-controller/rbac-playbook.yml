@@ -1,0 +1,17 @@
+- hosts: controller-0
+  remote_user: root
+  tasks:
+  - name: copy rbac-setup script
+    copy:
+      src: /opt/app/08-kube-controller/rbac-setup.sh
+      dest: /opt/rbac-setup.sh
+      owner: root
+      group: root
+      mode: 0744
+  - name: status kube
+    command: systemctl status kube-apiserver
+  - name: waiting for kube to start
+    pause:
+      seconds: 25
+  - name: Setup RBAC
+    command: /opt/rbac-setup.sh

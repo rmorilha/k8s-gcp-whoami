@@ -1,0 +1,16 @@
+{
+  "CN": "front-proxy-client",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "BR",
+      "L": "BR",
+      "O": "Rmorilha Kubernetes",
+      "OU": "Rmorilha Kubernetes",
+      "ST": "SP"
+    }
+  ]
+}

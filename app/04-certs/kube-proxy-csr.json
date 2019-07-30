@@ -1,0 +1,16 @@
+{
+  "CN": "system:kube-proxy",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "BR",
+      "L": "SP",
+      "O": "system:node-proxier",
+      "OU": "Rmorilha Kubernetes",
+      "ST": "SP"
+    }
+  ]
+}
